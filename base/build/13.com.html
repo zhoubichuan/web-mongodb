@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>基础4 | MongoDB学习笔记</title>
+    <meta name="generator" content="VuePress 1.9.7">
+    
+    <meta name="description" content="个人总结的vuepress学习技术文档-语法">
+    <meta name="keywords" content="vuepress,最新技术文档,vuepress语法,markdown语法">
+    
+    <link rel="preload" href="/web-mongodb/assets/css/0.styles.212954f6.css" as="style"><link rel="preload" href="/web-mongodb/assets/js/app.146d25eb.js" as="script"><link rel="preload" href="/web-mongodb/assets/js/2.675b9061.js" as="script"><link rel="preload" href="/web-mongodb/assets/js/13.434245e7.js" as="script"><link rel="preload" href="/web-mongodb/assets/js/3.4e24d5fc.js" as="script"><link rel="prefetch" href="/web-mongodb/assets/js/10.34506c01.js"><link rel="prefetch" href="/web-mongodb/assets/js/11.7d1e5171.js"><link rel="prefetch" href="/web-mongodb/assets/js/12.f6ce1ba0.js"><link rel="prefetch" href="/web-mongodb/assets/js/14.673e5cf9.js"><link rel="prefetch" href="/web-mongodb/assets/js/15.254de26e.js"><link rel="prefetch" href="/web-mongodb/assets/js/16.8f2439f8.js"><link rel="prefetch" href="/web-mongodb/assets/js/17.78f8363b.js"><link rel="prefetch" href="/web-mongodb/assets/js/18.8520ae7c.js"><link rel="prefetch" href="/web-mongodb/assets/js/19.acae7903.js"><link rel="prefetch" href="/web-mongodb/assets/js/20.a28f9dcf.js"><link rel="prefetch" href="/web-mongodb/assets/js/21.a2213c6b.js"><link rel="prefetch" href="/web-mongodb/assets/js/22.88e0153a.js"><link rel="prefetch" href="/web-mongodb/assets/js/23.0672cb02.js"><link rel="prefetch" href="/web-mongodb/assets/js/24.65b2daec.js"><link rel="prefetch" href="/web-mongodb/assets/js/25.c4d00d61.js"><link rel="prefetch" href="/web-mongodb/assets/js/26.fc6f8e82.js"><link rel="prefetch" href="/web-mongodb/assets/js/27.70ebf994.js"><link rel="prefetch" href="/web-mongodb/assets/js/28.464eaf10.js"><link rel="prefetch" href="/web-mongodb/assets/js/29.42b641ad.js"><link rel="prefetch" href="/web-mongodb/assets/js/30.306ea60c.js"><link rel="prefetch" href="/web-mongodb/assets/js/31.be8948ae.js"><link rel="prefetch" href="/web-mongodb/assets/js/32.df74d36c.js"><link rel="prefetch" href="/web-mongodb/assets/js/33.2d766bf8.js"><link rel="prefetch" href="/web-mongodb/assets/js/34.be5e1b39.js"><link rel="prefetch" href="/web-mongodb/assets/js/35.cf1a5fcb.js"><link rel="prefetch" href="/web-mongodb/assets/js/36.a8d1e0d5.js"><link rel="prefetch" href="/web-mongodb/assets/js/37.c10a80c0.js"><link rel="prefetch" href="/web-mongodb/assets/js/38.c8018328.js"><link rel="prefetch" href="/web-mongodb/assets/js/39.6cbf021e.js"><link rel="prefetch" href="/web-mongodb/assets/js/4.a44836c8.js"><link rel="prefetch" href="/web-mongodb/assets/js/40.3f405d26.js"><link rel="prefetch" href="/web-mongodb/assets/js/41.c4e905bc.js"><link rel="prefetch" href="/web-mongodb/assets/js/42.4f1de1ad.js"><link rel="prefetch" href="/web-mongodb/assets/js/5.9347a682.js"><link rel="prefetch" href="/web-mongodb/assets/js/6.eea778bd.js"><link rel="prefetch" href="/web-mongodb/assets/js/7.a55f0d7f.js"><link rel="prefetch" href="/web-mongodb/assets/js/8.e0ed2923.js"><link rel="prefetch" href="/web-mongodb/assets/js/9.2f493107.js">
+    <link rel="stylesheet" href="/web-mongodb/assets/css/0.styles.212954f6.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/web-mongodb/" class="home-link router-link-active"><!----> <span class="site-name">MongoDB学习笔记</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web-mongodb/base/build/1.config.html" class="nav-link">
+  1.MongoDB实践指南
+</a></li><li class="dropdown-item"><!----> <a href="/web-mongodb/base/practice/1.MongoDB.html" class="nav-link">
+  2.MongoDB相关实践
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级知识" class="dropdown-title"><span class="title">高级知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级知识" class="mobile-dropdown-title"><span class="title">高级知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web-mongodb/senior/use/1.recursionAndDynamics.html" class="nav-link">
+  1.组件精讲
+</a></li><li class="dropdown-item"><!----> <a href="/web-mongodb/senior/typeScript/inde.html" class="nav-link">
+  2.TypeScript
+</a></li></ul></div></div> <a href="https://github.com/zhoubichuan/web-mongodb" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="基础知识" class="dropdown-title"><span class="title">基础知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="基础知识" class="mobile-dropdown-title"><span class="title">基础知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web-mongodb/base/build/1.config.html" class="nav-link">
+  1.MongoDB实践指南
+</a></li><li class="dropdown-item"><!----> <a href="/web-mongodb/base/practice/1.MongoDB.html" class="nav-link">
+  2.MongoDB相关实践
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="高级知识" class="dropdown-title"><span class="title">高级知识</span> <span class="arrow down"></span></button> <button type="button" aria-label="高级知识" class="mobile-dropdown-title"><span class="title">高级知识</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/web-mongodb/senior/use/1.recursionAndDynamics.html" class="nav-link">
+  1.组件精讲
+</a></li><li class="dropdown-item"><!----> <a href="/web-mongodb/senior/typeScript/inde.html" class="nav-link">
+  2.TypeScript
+</a></li></ul></div></div> <a href="https://github.com/zhoubichuan/web-mongodb" target="_blank" rel="noopener noreferrer" class="repo-link">
+    查看源码
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><a href="/web-mongodb/base/build/1.config.html" class="sidebar-link">1.什么是 MongoDB</a></li><li><a href="/web-mongodb/base/build/2.webpack.html" class="sidebar-link">二.MongoDB 安装</a></li><li><a href="/web-mongodb/base/build/3.file.html" class="sidebar-link">3.MongoDB 启动与连接</a></li><li><a href="/web-mongodb/base/build/4.single.html" class="sidebar-link">4.MongoDB 基本概念</a></li><li><a href="/web-mongodb/base/build/5.page.html" class="sidebar-link">5.数据库操作</a></li><li><a href="/web-mongodb/base/build/7.module.html" class="sidebar-link">6.集合操作</a></li><li><a href="/web-mongodb/base/build/8.project.html" class="sidebar-link">7.插入文档</a></li><li><a href="/web-mongodb/base/build/9.utils.html" class="sidebar-link">更新文档</a></li><li><a href="/web-mongodb/base/build/10.ui.html" class="sidebar-link">基础知识</a></li><li><a href="/web-mongodb/base/build/11.data.html" class="sidebar-link">基础 2</a></li><li><a href="/web-mongodb/base/build/12.skill.html" class="sidebar-link">基础3</a></li><li><a href="/web-mongodb/base/build/13.com.html" aria-current="page" class="active sidebar-link">基础4</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#基础4" class="sidebar-link">基础4</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_1-主从复制" class="sidebar-link">1. 主从复制</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_1-1-主服务器" class="sidebar-link">1.1 主服务器</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_1-2-从服务器" class="sidebar-link">1.2 从服务器</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_1-3-主从复制的其它设置项" class="sidebar-link">1.3 主从复制的其它设置项</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_1-4-利用shell动态添加和删除主节点" class="sidebar-link">1.4 利用shell动态添加和删除主节点</a></li></ul></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-副本集" class="sidebar-link">2. 副本集</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-1-mongodb复制原理" class="sidebar-link">2.1 MongoDB复制原理</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-1-流程" class="sidebar-link">2.1 流程</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-2-配置副本集" class="sidebar-link">2.2 配置副本集</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-3-初始化副本集" class="sidebar-link">2.3 初始化副本集</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-4-高级参数" class="sidebar-link">2.4 高级参数</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-5-读写分离操作" class="sidebar-link">2.5 读写分离操作</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_2-6-oplog" class="sidebar-link">2.6 Oplog</a></li></ul></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_3-分片" class="sidebar-link">3. 分片</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_3-1-分片架构图" class="sidebar-link">3.1 分片架构图</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_3-2-片键" class="sidebar-link">3.2 片键</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_3-3-分片的应用场景" class="sidebar-link">3.3 分片的应用场景</a></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_3-4-配置" class="sidebar-link">3.4 配置</a></li></ul></li><li class="sidebar-sub-header"><a href="/web-mongodb/base/build/13.com.html#_4-参考" class="sidebar-link">4. 参考</a></li></ul></li><li><a href="/web-mongodb/base/build/14.data.html" class="sidebar-link">基础5</a></li><li><a href="/web-mongodb/base/build/15.api.html" class="sidebar-link">/base/build/15.api.html</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h2 id="基础4"><a href="#基础4" class="header-anchor">#</a> 基础4</h2> <h2 id="_1-主从复制"><a href="#_1-主从复制" class="header-anchor">#</a> 1. 主从复制</h2> <p>主从复制是一个简单的数据库同步备份的集群技术</p> <p>在数据库集群中要明确知道谁是主服务器，主服务器只有一台
+从服务器要知道自己的数据源也就是知道自己的主服务器是谁
+--master用来确定主服务器，--slave和--source 来控制从服务器
+masterslave</p> <h3 id="_1-1-主服务器"><a href="#_1-1-主服务器" class="header-anchor">#</a> 1.1 主服务器</h3> <p>master.conf</p> <p>dbpath=E:\ms\master
+port=1000
+master=true
+master.bat</p> <p>mongod --config master.conf</p> <h3 id="_1-2-从服务器"><a href="#_1-2-从服务器" class="header-anchor">#</a> 1.2 从服务器</h3> <p>slave.conf</p> <p>dbpath=E:\p\slave
+port=1001
+slave=true
+source=127.0.0.1:1000
+slave.bat</p> <p>mongod --config slave.conf
+rs.slaveOk();</p> <h3 id="_1-3-主从复制的其它设置项"><a href="#_1-3-主从复制的其它设置项" class="header-anchor">#</a> 1.3 主从复制的其它设置项</h3> <p>-only 从节点-&gt; 指定复制某个数据库默认是复制全部数据库
+-slavedelay 从节点-&gt; 设置主数据库同步数据的延迟(单位是秒)
+-fastsync 从节点-&gt; 以主数据库的节点快照为节点启动从数据库
+-autoresync 从节点-&gt;如果不同步则重新同步数据库
+-oplogSize 主节点-&gt;设置oplog的大小(主节点操作记录存储到local的oplog中)</p> <h3 id="_1-4-利用shell动态添加和删除主节点"><a href="#_1-4-利用shell动态添加和删除主节点" class="header-anchor">#</a> 1.4 利用shell动态添加和删除主节点</h3> <p>登录从服务器</p> <p>use local;
+show collections;
+db.sources.find();
+//{  &quot;host&quot; : &quot;127.0.0.1:8000&quot;, &quot;source&quot; : &quot;main&quot;, &quot;syncedTo&quot; : Timestamp(1524728329, 1) }
+db.sources.insert({host:'127.0.0.1:8000'});//挂载主节点
+db.sources.remove({host:'127.0.0.1:8000'});//删除已经挂载的主节点</p> <h2 id="_2-副本集"><a href="#_2-副本集" class="header-anchor">#</a> 2. 副本集</h2> <p>MongoDB复制是将数据同步在多个服务器的过程。
+复制提供了数据的冗余备份，并在多个服务器上存储数据副本，提高了数据的可用性， 并可以保证数据的安全性。
+复制还允许您从硬件故障和服务中断中恢复数据。</p> <h3 id="_2-1-mongodb复制原理"><a href="#_2-1-mongodb复制原理" class="header-anchor">#</a> 2.1 MongoDB复制原理</h3> <p>mongodb的复制至少需要两个节点。其中一个是主节点，负责处理客户端请求，其余的都是从节点，负责复制主节点上的数据。
+mongodb各个节点常见的搭配方式为：一主一从、一主多从。
+主节点记录在其上的所有操作oplog，从节点定期轮询主节点获取这些操作，然后对自己的数据副本执行这些操作，从而保证从节点的数据与主节点一致。
+replication</p> <h3 id="_2-1-流程"><a href="#_2-1-流程" class="header-anchor">#</a> 2.1 流程</h3> <p>一台活跃服务器和二个备份服务器
+当活跃服务器出现故障，这时集群根据权重算法推选出出活跃服务器
+当原来的主服务器恢复后又会变成从服务器</p> <h3 id="_2-2-配置副本集"><a href="#_2-2-配置副本集" class="header-anchor">#</a> 2.2 配置副本集</h3> <p>A服务器</p> <p>dbpath=E:\repl\repl1
+port=2001
+replSet=group
+B服务器</p> <p>dbpath=E:\repl\repl2
+port=2002
+replSet=group
+C服务器</p> <p>dbpath=E:\repl\repl3
+port=2003
+replSet=group</p> <h3 id="_2-3-初始化副本集"><a href="#_2-3-初始化副本集" class="header-anchor">#</a> 2.3 初始化副本集</h3> <p>rs.initiate() 启动一个新的副本集
+rs.conf() 查看副本集的配置
+rs.status() 命令
+use admin;
+var conf=
+{
+&quot;_id&quot; : &quot;group&quot;,
+&quot;members&quot; : [
+{ &quot;_id&quot; : 0,  &quot;host&quot; : &quot;127.0.0.1:2001&quot;  },
+{ &quot;_id&quot; : 1,  &quot;host&quot; : &quot;127.0.0.1:2002&quot;  },
+{ &quot;_id&quot; : 2,  &quot;host&quot; : &quot;127.0.0.1:2003&quot;  }
+]
+}
+rs.initiate(conf);
+rs.status();</p> <h3 id="_2-4-高级参数"><a href="#_2-4-高级参数" class="header-anchor">#</a> 2.4 高级参数</h3> <p>standard 常规节点 参与投票有可能成为活跃节点
+passive 副本节点 参与投票，但不能成为活跃节点
+arbiter 仲裁节点 只参与投票，不复制节点，也不能成为活跃节点
+priority 0到1000之间，0代表是副本节点，1到1000是常规节点
+arbiterOnly:true 仲裁节点</p> <h3 id="_2-5-读写分离操作"><a href="#_2-5-读写分离操作" class="header-anchor">#</a> 2.5 读写分离操作</h3> <p>一般情况下作为副本节点是不能进行数据库操作的，但是在读取密集的系统中读写分离是必要的</p> <p>rs.slaveOk();</p> <h3 id="_2-6-oplog"><a href="#_2-6-oplog" class="header-anchor">#</a> 2.6 Oplog</h3> <p>它被存储在本地数据库local中，会记录每一个操作。 如果希望在故障恢复的时候尽可能更多，可以把这个size设置的大一点</p> <p>--oplogSize 1024
+use local;
+db.oplog.rs.find().limit(2);</p> <h2 id="_3-分片"><a href="#_3-分片" class="header-anchor">#</a> 3. 分片</h2> <p>在Mongodb里面存在另一种集群，就是分片技术,可以满足MongoDB数据量大量增长的需求。 当MongoDB存储海量的数据时，一台机器可能不足以存储数据，也可能不足以提供可接受的读写吞吐量。这时，我们就可以通过在多台机器上分割数据，使得数据库系统能存储和处理更多的数据。</p> <h3 id="_3-1-分片架构图"><a href="#_3-1-分片架构图" class="header-anchor">#</a> 3.1 分片架构图</h3> <p>sharding</p> <h3 id="_3-2-片键"><a href="#_3-2-片键" class="header-anchor">#</a> 3.2 片键</h3> <p>路由根据片键把不同的文档保存到不同的分片中</p> <h3 id="_3-3-分片的应用场景"><a href="#_3-3-分片的应用场景" class="header-anchor">#</a> 3.3 分片的应用场景</h3> <p>单台机器无法存储
+单台机器已经不能满足高并发操作
+想把尽可能多的数据存放到内存中提高性能</p> <h3 id="_3-4-配置"><a href="#_3-4-配置" class="header-anchor">#</a> 3.4 配置</h3> <h4 id="_3-4-1-创建sharding副本集"><a href="#_3-4-1-创建sharding副本集" class="header-anchor">#</a> 3.4.1 创建Sharding副本集</h4> <p>mkdir E:\repl\db2001
+mongod --port 2001 --dbpath=/data/db2001  --shardsvr --replSet=shard1
+mkdir E:\repl/db2002
+mongod --port 2002 --dbpath=/data/db2002 --shardsvr --replSet=shard1</p> <h1 id="mongo-localhost-2001"><a href="#mongo-localhost-2001" class="header-anchor">#</a> mongo localhost:2001</h1> <p>rs.initiate({_id: 'shard1', members: [{_id: 0, host: 'localhost:2001'}, {_id: 1, host: 'localhost:2002'}]})
+rs.isMaster() #查看主从关系
+mkdir E:\repl\db2003
+mongod --port 2003 --dbpath=E:\repl\db2003  --shardsvr --replSet=shard2
+mkdir E:\repl\db2004
+mongod --port 2004 --dbpath=E:\repl\db2004 --shardsvr --replSet=shard2</p> <h1 id="mongo-localhost-2003"><a href="#mongo-localhost-2003" class="header-anchor">#</a> mongo localhost:2003</h1> <p>rs.initiate({_id: 'shard2', members: [{_id: 0, host: 'localhost:2003'}, {_id: 1, host: 'localhost:2004'}]})
+rs.isMaster() #查看主从关系</p> <h4 id="_3-4-2-创建一个配置服务器"><a href="#_3-4-2-创建一个配置服务器" class="header-anchor">#</a> 3.4.2 创建一个配置服务器</h4> <p>mkdir E:\repl\db2005
+mongod --port 2005 --dbpath=E:\repl\db2005  --shardsvr --replSet=config
+mkdir E:\repl\db2006
+mongod --port 2006 --dbpath=E:\repl\db2006  --shardsvr --replSet=config</p> <h1 id="mongo-localhost-2005"><a href="#mongo-localhost-2005" class="header-anchor">#</a> mongo localhost:2005</h1> <p>rs.initiate({_id: 'config', members: [{_id: 0, host: 'localhost:2005'}, {_id: 1, host: 'localhost:2006'}]})
+rs.isMaster() #查看主从关系</p> <h4 id="_3-4-2-创建路由服务器-并且连接配置服务器"><a href="#_3-4-2-创建路由服务器-并且连接配置服务器" class="header-anchor">#</a> 3.4.2 创建路由服务器，并且连接配置服务器</h4> <p>路由器调用mongos命令</p> <p>mongos --port 2006 --configdb config/localhost:2005,localhost:2006</p> <h4 id="_3-4-3-添加分片数据库"><a href="#_3-4-3-添加分片数据库" class="header-anchor">#</a> 3.4.3 添加分片数据库</h4> <p>mongo localhost:2006
+use admin</p> <blockquote><p>db.runCommand({ addshard: 'shard1/localhost:2001,localhost:2002'})
+db.runCommand({ addshard: 'shard2/localhost:2003,localhost:2004'})</p></blockquote> <h4 id="_3-4-5-在路由服务器打开数据分片功能"><a href="#_3-4-5-在路由服务器打开数据分片功能" class="header-anchor">#</a> 3.4.5 在路由服务器打开数据分片功能</h4> <p>use admin;</p> <blockquote><p>db.runCommand({ enablesharding: 'school'})
+db.runCommand({ shardcollection: 'school.students', key: {name: 1}})</p></blockquote> <h2 id="_4-参考"><a href="#_4-参考" class="header-anchor">#</a> 4. 参考</h2> <p>configuration-options</p></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/zhoubichuan/web-mongodb/edit/master/src/base/build/13.com.md" target="_blank" rel="noopener noreferrer">在github上编辑此页</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">上次更新:</span> <span class="time">2022/3/28 下午11:29:30</span></div></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/web-mongodb/base/build/12.skill.html" class="prev">
+        基础3
+      </a></span> <span class="next"><a href="/web-mongodb/base/build/14.data.html">
+        基础5
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"><!----><!----></div></div>
+    <script src="/web-mongodb/assets/js/app.146d25eb.js" defer></script><script src="/web-mongodb/assets/js/2.675b9061.js" defer></script><script src="/web-mongodb/assets/js/13.434245e7.js" defer></script><script src="/web-mongodb/assets/js/3.4e24d5fc.js" defer></script>
+  </body>
+</html>
