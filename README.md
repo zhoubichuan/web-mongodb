@@ -1,10 +1,4 @@
 <div align="center">
-  <img
-    width="200"
-    height="200"
-    src="./config/home.png"
-  />
-
   <br />
 
   <p align="center">
