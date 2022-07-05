@@ -15,6 +15,7 @@
   <p>整理自日常学习资料</p>
 
 </div>
+
 ![一.Vue 的工程化](./src/.vuepress/public/home.png)
 
 - 基础知识
