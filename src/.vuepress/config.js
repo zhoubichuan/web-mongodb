@@ -56,11 +56,11 @@ module.exports = {
     nav: [{
       text: '基础知识',
       items: [{
-        text: '1.MongoDB实践指南',
+        text: '1.MongoDB基础',
         link: '/base/build/1.config'
       },
       {
-        text: '2.MongoDB相关实践',
+        text: '2.MongoDB实践',
         link: '/base/practice/1.MongoDB',
       }
       ]
