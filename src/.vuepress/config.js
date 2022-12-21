@@ -5,7 +5,7 @@ module.exports = {
   port: 3009,
   dest: 'web-mongodb', // 指定 vuepress 的输出目录
   markdown: {
-    toc: { includeLevel: [2,3] },
+    toc: { includeLevel: [2, 3] },
     lineNumbers: true // 代码块显示行号
   },
   // head: [
@@ -56,24 +56,24 @@ module.exports = {
     nav: [{
       text: '基础知识',
       items: [{
-        text: '1.MongoDB基础',
-        link: '/base/build/1.config'
+        text: '一.MongoDB基础',
+        link: '/base/build/1.index'
       },
       {
-        text: '2.MongoDB实践',
-        link: '/base/practice/1.MongoDB',
+        text: '二.MongoDB实践',
+        link: '/base/practice/1.index',
       }
       ]
     },
     {
       text: '高级知识',
       items: [{
-        text: '1.组件精讲',
-        link: '/senior/use/1.recursionAndDynamics'
+        text: '一.项目实战',
+        link: '/senior/use/1.index'
       },
       {
-        text: '2.TypeScript',
-        link: '/senior/typeScript/inde'
+        text: '二.其他',
+        link: '/senior/typeScript/1.index'
       },
       ]
     }
@@ -95,8 +95,31 @@ module.exports = {
         '14.data',
         '15.api'
       ],
-      '/base/practice/': ['1.MongoDB', '2.Jenkins', '3.gitlab', 'vscode', 'test', 'prem', 'i18n'],
-      '/senior/use/': ['1.recursionAndDynamics', '2.extend', '3.componentCommunication', '4.render', '5.api', '6.form', '7.checkBox', '8.active', '9.alert', '10.table', '11.tree'],
+      '/base/practice/': [
+        '1.MongoDB',
+        '2.Jenkins',
+        '3.gitlab',
+        'vscode',
+        'test',
+        'prem',
+        'i18n'
+      ],
+      '/senior/use/': [
+        '1.index',
+        '2.extend',
+        '3.componentCommunication',
+        '4.render',
+        '5.api',
+        '6.form',
+        '7.checkBox',
+        '8.active',
+        '9.alert',
+        '10.table',
+        '11.tree'
+      ],
+      '/senior/typeScript/': [
+        '1.index'
+      ],
     },
     searchMaxSuggestoins: 10
   },
