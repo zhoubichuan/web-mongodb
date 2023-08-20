@@ -80,7 +80,7 @@ module.exports = {
     ],
     sidebar: {
       '/base/build/': [
-        '1.config',
+        '1.index',
         '2.webpack',
         '3.file',
         '4.single',
@@ -96,7 +96,7 @@ module.exports = {
         '15.api'
       ],
       '/base/practice/': [
-        '1.MongoDB',
+        '1.index',
         '2.Jenkins',
         '3.gitlab',
         'vscode',
