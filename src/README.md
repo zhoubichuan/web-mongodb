@@ -3,7 +3,7 @@ lang: zh-CN
 home: true
 heroImage: "/home.png"
 actionText: 先睹为快 →
-actionLink: /base/build/1.config
+actionLink: /base/build/1.index
 pageClass: page_index
 footer: MongoDB相关知识
 meta:
