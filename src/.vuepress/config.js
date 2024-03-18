@@ -1,3 +1,4 @@
+const path = require("path");
 module.exports = {
   title: 'MongoDB学习笔记',
   description: '风浪没平息 我宣告奔跑的意义',
@@ -7,6 +8,9 @@ module.exports = {
   markdown: {
     toc: { includeLevel: [2, 3] },
     lineNumbers: true // 代码块显示行号
+  },
+  alias: {
+    "common-node": path.resolve(__dirname, "../../common-node/"),
   },
   // head: [
   //   ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
@@ -56,11 +60,11 @@ module.exports = {
     nav: [{
       text: '基础知识',
       items: [{
-        text: '一.MongoDB基础',
+        text: '一.基础学习',
         link: '/base/build/1.index'
       },
       {
-        text: '二.MongoDB实践',
+        text: '二.实战练习',
         link: '/base/practice/1.index',
       }
       ]
@@ -99,10 +103,10 @@ module.exports = {
         '1.index',
         '2.Jenkins',
         '3.gitlab',
-        'vscode',
-        'test',
-        'prem',
-        'i18n'
+        'node',
+        'express',
+        'koa',
+        'egg'
       ],
       '/senior/use/': [
         '1.index',
