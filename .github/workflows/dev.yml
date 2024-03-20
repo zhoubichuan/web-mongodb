@@ -7,7 +7,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1
+      # 切代码到 runner
+      - name: Checkout repository
+        uses: actions/checkout@v1
+        with:
+          submodules: recursive
+      # 下载 git submodule
+      - name: Update submodules
+        run: |
+          git submodule update --remote
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
