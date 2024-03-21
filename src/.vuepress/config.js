@@ -10,7 +10,7 @@ module.exports = {
     lineNumbers: true // 代码块显示行号
   },
   alias: {
-    "common-node": path.resolve(__dirname, "../../common-node/"),
+    "common-node": path.resolve(__dirname, "../../common-node"),
   },
   // head: [
   //   ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.7.1/katex.min.css' }],
