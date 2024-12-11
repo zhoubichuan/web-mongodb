@@ -15,7 +15,7 @@ jobs:
       # 下载 git submodule
       - name: Update submodules
         run: |
-          git submodule update --remote
+          git submodule update --init
       - name: Install Node.js
         uses: actions/setup-node@v1
         with:
