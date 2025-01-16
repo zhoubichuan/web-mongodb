@@ -26,7 +26,7 @@
     "vuepress-plugin-boxx": "0.0.7"
   },
   "dependencies": {
-    "mongoose": "^6.8.0",
+    "mongoose": "^8.9.5",
     "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
